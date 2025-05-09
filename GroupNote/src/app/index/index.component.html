@@ -1,0 +1,17 @@
+   <div class="container">
+<div class="card">
+   <div class="col-sm">
+        <div class="card-body" style="text-align: center;">
+            @for(Room of Rooms; track Room.RoomId)
+                    {
+                        <div class="container">
+                            <div class="card">
+                                <div class="card-title">{{Room.RoomName}}</div>
+                            </div>
+                            <button class="btn btn-primary" routerLink="Room">Join Room</button>
+                        </div>
+                    }
+        </div>
+</div>
+</div>
+</div>
