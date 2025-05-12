@@ -28,8 +28,9 @@ export const routes: Routes = [
         title:'joincode'
     },
     {
-        path: 'room',
+        path: 'room/:id',
         component: RoomComponent,
         title: 'room'
     }
 ];
+export default routes;

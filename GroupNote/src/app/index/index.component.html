@@ -8,9 +8,10 @@
                             <div class="card">
                                 <div class="card-title">{{Room.RoomName}}</div>
                             </div>
-                            <button class="btn btn-primary" routerLink="Room">Join Room</button>
+                            <button class="btn btn-primary" [routerLink]="['/room', Room?.RoomId]">Join Room</button>
                         </div>
                     }
+                    
         </div>
 </div>
 </div>
