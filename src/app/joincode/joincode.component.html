@@ -1,0 +1,13 @@
+<div class="container">
+<div class="card">
+<div class="col-sm">
+    <div class="card-body" style="text-align: center;">
+        <form>
+            <label for="roomcode">Roomcode:</label>
+            <input type="text" id="roomcode">
+            <br>
+            <br>
+            <button class="btn btn-primary" [routerLink]="['/room', Room?.RoomCode]">Submit Room Code</button>
+        </form>
+    </div>
+</div>    
