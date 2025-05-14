@@ -28,13 +28,4 @@ registerForm = new FormGroup({
       const AccountsId = Number(this.route.snapshot.params["AccountId"])
       this.Account = this.testingService.getAccountById(AccountsId)
     }
-    submitRegistration()
-    {
-      this.testingService.submitRegistration(
-        this.registerForm.value.firstName ?? '',
-        this.registerForm.value.lastName ?? '',
-        this.registerForm.value.email ?? '',
-        this.registerForm.value.password ?? ''
-      );
-    }
 }
