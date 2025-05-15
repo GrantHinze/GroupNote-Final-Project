@@ -16,6 +16,10 @@ testingService: TestingService = inject(TestingService);
 Account: Account | undefined; 
   Rooms!: Room[]
 
+  createSignal(){
+   let counter = 0
+    counter = counter * 2;
+  }
   ngOnInit()
   {
     this.Rooms = Rooms
